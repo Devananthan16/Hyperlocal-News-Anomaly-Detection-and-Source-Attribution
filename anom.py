@@ -44,7 +44,7 @@ stop_words = set(stopwords.words('english'))
 with st.sidebar:
     selected = option_menu(
         "Main Menu", ["Home", "Data", "New"],
-        icons=['house', 'table', 'plus-circle'], menu_icon="cast", default_index=2
+        icons=['house', 'table', 'plus-circle'], menu_icon="cast", default_index=0
     )
 
 if selected=="Home":
