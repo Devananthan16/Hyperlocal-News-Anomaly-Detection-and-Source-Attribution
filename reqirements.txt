@@ -1,11 +1,14 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from streamlit_option_menu import option_menu
-import joblib
-from sentence_transformers import SentenceTransformer
-
-import matplotlib.pyplot as plt
-import plotly.express as px
+streamlit
+pandas
+numpy
+nltk
+spacy
+streamlit-option-menu
+joblib
+sentence-transformers
+matplotlib
+plotly
+transformers
+bertopic
+scikit-learn
+xgboost
