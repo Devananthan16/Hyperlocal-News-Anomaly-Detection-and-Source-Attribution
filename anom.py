@@ -1,16 +1,29 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import nltk
+from pathlib import Path
+
+
+nltk_data_dir = Path("nltk_data")
+nltk_data_dir.mkdir(exist_ok=True)
+nltk.data.path.append(str(nltk_data_dir))
+
+for resource in ["punkt", "stopwords", "wordnet"]:
+    try:
+        nltk.data.find(f"corpora/{resource}")
+    except LookupError:
+        nltk.download(resource, download_dir=nltk_data_dir)
+
+
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+
 from streamlit_option_menu import option_menu
 import joblib
 from sentence_transformers import SentenceTransformer
-
 import matplotlib.pyplot as plt
 import plotly.express as px
-
-
 import seaborn as sns
 from wordcloud import WordCloud
 
