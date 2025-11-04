@@ -35,7 +35,7 @@ st.set_page_config(page_title='News Anomaly Dashboard', layout='wide')
 # ---------------------------
 # LOAD DATA AND MODELS
 # ---------------------------
-df = pd.read_csv(r'C:\Users\DEVA NANTHAN\Documents\ano\out.csv', encoding='latin1')
+df = pd.read_csv(r'out.csv', encoding='latin1')
 
 @st.cache_resource
 def load_models():
