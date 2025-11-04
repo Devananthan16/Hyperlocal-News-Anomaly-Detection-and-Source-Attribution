@@ -12,3 +12,5 @@ transformers
 bertopic
 scikit-learn
 xgboost
+umap-learn
+hdbscan
