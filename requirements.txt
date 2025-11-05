@@ -1,3 +1,4 @@
+# Core Dependencies
 nltk==3.9.2
 streamlit==1.39.0
 pandas==2.2.2
@@ -14,7 +15,14 @@ scikit-learn==1.5.2
 xgboost==2.1.1
 seaborn==0.13.2
 wordcloud==1.9.3
+
+# For topic modeling
 umap-learn==0.5.6
 hdbscan==0.8.40
-numba==0.60.0
+
+# Compatibility fix for Python 3.13 builds
+numba==0.59.1
+llvmlite==0.42.0
+
+# Pandas dependency for cloud platforms
 pyarrow==17.0.0
