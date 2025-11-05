@@ -12,7 +12,9 @@ transformers==4.45.2
 bertopic==0.16.2
 scikit-learn==1.5.2
 xgboost==2.1.1
-umap-learn==0.5.6
-hdbscan==0.8.40
 seaborn==0.13.2
 wordcloud==1.9.3
+umap-learn==0.5.6
+hdbscan==0.8.40
+numba==0.60.0
+pyarrow==17.0.0
